@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ben Austin</title>
+        <link rel = "stylesheet"
+        href = "https://cdnjs.cloudfare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel = "stylesheet"
+        href = "https://cdnjs.cloudfare.com/ajas/libs/font-awesome/5.11.2/css/all.css"
+        integrity = "sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <script src="https://kit.fontawesome.com/1d82a883f3.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href = "css/style.css">
+        <script src="https://d3js.org/d3.v6.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class= "logo">
+                <li class= "logo-list">
+                    <a class = "logo" href = "#home">
+                        <i class="fas fa-bold"></i>
+                    </a>
+                </li>
+            </div>
+
+            <button class = "nav-toggle" aria-label="toggle navigation">
+                <span class = "hamburger"></span>
+            </button>
+            <nav class = "nav">
+                <ul class="nav__list">
+                    <li class = "nav__item"><a href = "#home" class = "nav__link">Home</a></li>
+                    <li class = "nav__item"><a href = "#services" class = "nav__link">My Services</a></li>
+                    <li class = "nav__item"><a href = "#about" class = "nav__link">About me</a></li>
+                    <li class = "nav__item"><a href = "#work" class = "nav__link">My Work</a></li>
+                    <li class = "nav__item"><a href = "d3_page.html" class = "nav__link">d3.js</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class = "section__title section__title--intro">
+                Hi, I am <strong>Ben Austin</strong>
+            </h1>
+            <p class = "section__subtitle section__subtitle--intro">
+                Visualisation Analyst
+            </p>
+            <img src="img/profile_pic.jpg" class = "intro__image"> <!---->
+        </section>
+
+
+        <!-- My Services -->
+        <section class = "my-services" id="services">
+            <h2 class = "section__title section__title--services">What I do</h2>
+            <div class = "services">
+                <div class = "service">
+                    <h3>Undergraduate Degree</h3>
+                    <p>
+                        I am currently a student at the University of Bath studing Mathematics. 
+                        My final year units include training in data science, statistics, modelling and control theory, as well as pure mathematics such as chaos theory. 
+                        I am due to graduate with a first class degree in July 2023.
+                    </p>
+                </div> <!-- Close Service -->
+
+                <div class = "service">
+                    <h3>Experience</h3>
+                    <p>
+                        I am a MicroStrategy Certified Architect having completed the MSTR MCA in October 2021 while on placement at Sainsbury's.
+                        I regularly collaborated on our schema, and facilitated the links between our SQL database, Snowflake, and our strategic BI tool, MicroStrategy.
+                    </p>
+                </div> <!-- Close Service -->
+
+                <div class = "service">
+                    <h3>Development</h3>
+                    <p>
+                        Having gained experience in several programming languages, I provisioned tools built to automate the security classification of data in Python, as well as data upload connectors in Jupyter Notebook. 
+                        I am currently in the process of learning HTML, JavaScript and d3.js to broaden my capability.</p>
+                </div> <!-- Close Service -->
+            </div> <!-- Close Services -->
+
+            <a href="#work" class="btn">My Work</a>
+
+        <!-- About me -->
+        </section>
+
+        <section class = "about-me" id="about">
+            <h2 class = "section__title section__title--about">Who I am</h2>
+            <p class = "section__subtitle section__subtitle--about">Student / Visualisation Analyst</p>
+            <div class="about-me__body">
+                <p>I am a hard-working, driven student with exemplary academic achievements and organisation skills. I always strive to excel and push myself to achieve the highest standard possible at all tasks and in all situations, both within my degree and employment. I enjoy working efficiently to fit required deadlines and in my previous work I have completed tasks under pressure, and to a high quality to provide a phenomenal service, over and above the expectation of all stakeholders. I am currently returning to Sainsbury's Tech in August 2023 to progress my career as a Data Visualisation and Automation Analyst.</p>
+            </div>
+
+            <img src="img/Bath_Bright.jpeg" alt = "Me" class= "about-me__img">
+        </section>
+        <div id="grades_circular" class="my_dataviz"></div>
+        <!-- My work -->
+
+        <section class = "my-work" id = "work">
+            <h2 class = "section__title">My Work</h2>
+            <p class = "section__subtitle section__subtitle--my-work">A selection of my range of work</p>
+            <div class = "portfolio">
+
+                <a href = "map_viz.html" class = "portfolio__item">
+                    <img src="img/MapIcon.png" alt = "" class="portfolio__img">
+                </a>
+
+                <a href = "scraping.html" class = "portfolio__item">
+                    <img src="img/BS.png" alt = "" class="portfolio__img">
+                </a>
+
+                <a href = "d3_page.html" class = "portfolio__item">
+                    <img src="img/d3.png" alt = "" class="portfolio__img">
+                </a>
+
+                <a href = "football_page.html" class = "portfolio__item">
+                    <img src="img/R.png" alt = "" class="portfolio__img">
+                </a>
+                <a href = "scroller.html" class = "portfolio__item">
+                    <img src="img/scroller.png" alt = "" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer class = "footer">
+            <a href="mailto:benaustin27@gmail.com" class = "footer__link">benaustin27@gmail.com</a>
+            <ul class = "social-list">
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://facebook.com">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://instagram.com">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class = "social-list__item">
+                    <a class = "social-list__link" href = "https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js" integrity="sha512-UgS0SVyy/0fZ0i48Rr7gKpnP+Jio3oC7M4XaKP3BJUB/guN6Zr4BjU0Hsle0ey2HJvPLHE5YQCXTDrx27Lhe7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/index.js"></script>
+        <script src="js/grades_circular.js"></script>
+        
+    </body>
+</html>
