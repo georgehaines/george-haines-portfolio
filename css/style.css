@@ -272,8 +272,7 @@ header {
 
 .intro__image {
     grid-area: img;
-    min-width: 100px;      /* you can keep or remove this */
-    max-width: 150px;      /* THIS is the important part */
+    max-width: 200px;      /* THIS is the important part */
     width: 100%;
     position: relative;
     z-index: 2;
@@ -407,19 +406,19 @@ header {
     overflow: hidden;
 }
 
-.portfolio img {
+.portfolio__img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
     width: 100%;
-    max-width: 200px;     /* same size as before */
+    max-width: 200px;
     height: auto;
     display: block;
-    margin: 0 auto;       /* centers each item */
-}
+    margin: 0 auto;
 
 .portfolio__img:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);   /* was 1.2 — this is the fix */
     opacity: 0.9;
-
 }
+
 
 /* Footer */
 
