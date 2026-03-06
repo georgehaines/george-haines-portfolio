@@ -289,44 +289,27 @@ header {
     }
 }
 
-/* My Services Section */
+/* === RESPONSIVE FIX FOR MY SERVICES SECTION === */
+/* Overrides older rules above */
 
 .my-services {
-    background-color: var(--clr-dark);
-    background-size: cover;
-    color: var(--clr-light);
     text-align: center;
     padding: 5em 2em;
 }
 
-/* Title styling stays the same */
-.section__title--services {
-    color: var(--clr-accent);
-    position: relative;
-}
-
-.section__title--services::after {
-    content: ' ';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
-}
-
-/* Base layout */
 .services {
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     gap: 60px;
     max-width: 1200px;
-    margin: 0 auto 2em auto;
+    margin: 0 auto;
 }
 
 .service {
-    max-width: 320px;
+    max-width: 320px !important;
+    margin: 0 auto !important;
     text-align: center;
 }
 
@@ -335,33 +318,33 @@ header {
 }
 
 .service p {
-    line-height: 1.6;
     margin: 0 auto;
+    line-height: 1.6;
 }
 
-/* --- Tablet (2 columns) --- */
+/* Tablet: 2 columns */
 @media (max-width: 992px) {
     .services {
         gap: 40px;
     }
 
     .service {
-        max-width: 45%;
+        max-width: 45% !important;
     }
 }
 
-/* --- Mobile (1 column) --- */
+/* Mobile: 1 column */
 @media (max-width: 600px) {
     .services {
         flex-direction: column;
-        align-items: center;
         gap: 40px;
     }
 
     .service {
-        max-width: 100%;
+        max-width: 100% !important;
     }
 }
+``
 
 /* My Work */ 
 
