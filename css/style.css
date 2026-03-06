@@ -272,7 +272,8 @@ header {
 
     .intro__image {
         grid-area: img;
-        min-width: 250px;
+        max-width: 250px;
+        width: 100%;
         position: relative;
         z-index: 2;
     }
@@ -388,8 +389,11 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background: white;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 0;
 }
 
 .section__subtitle--my-work {
@@ -397,10 +401,14 @@ header {
     color: var(--clr-accent);
 }
 
-.portfolio__item {
-    background: var(--clr-light);
-    overflow: hidden;
+.portfolio img {
+    width: 100%;
+    max-width: 200px;     /* same size as before */
+    height: auto;
+    display: block;
+    margin: 0 auto;       /* centers each item */
 }
+
 
 .portfolio__img {
     transition: 
