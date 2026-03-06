@@ -296,10 +296,12 @@ header {
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
+    padding: 5em 2em;
 }
 
+/* Title styling stays the same */
 .section__title--services {
-    color:var(--clr-accent);
+    color: var(--clr-accent);
     position: relative;
 }
 
@@ -313,70 +315,53 @@ header {
     opacity: 0.25;
 }
 
+/* Base layout */
 .services {
-    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto 2em auto;
 }
 
 .service {
-    max-width: 500px;
+    max-width: 320px;
+    text-align: center;
+}
+
+.service h3 {
+    margin-bottom: 15px;
+}
+
+.service p {
+    line-height: 1.6;
     margin: 0 auto;
 }
 
-@media (min-width: 800px) {
+/* --- Tablet (2 columns) --- */
+@media (max-width: 992px) {
     .services {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
+        gap: 40px;
     }
 
-    .service + .service {
-        margin-left: 2em;
+    .service {
+        max-width: 45%;
     }
 }
 
-.about-me {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.about-me__img {
-    box-shadow: var(--bs);
-}
-
-@media (min-width: 600px) {
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas:
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-        padding-bottom: 0px;
+/* --- Mobile (1 column) --- */
+@media (max-width: 600px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
     }
 
-    .section__title--about{
-        grid-area: title;
-    }
-
-    .section__subtitle--about{
-        grid-column: 1 / -1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-    }
-
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
+    .service {
+        max-width: 100%;
     }
 }
-
 
 /* My Work */ 
 
